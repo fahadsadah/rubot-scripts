@@ -1,4 +1,4 @@
-on(:command, {:command => 'test'}) do
+command(:test) do
 	|e|
 	rawsend("PRIVMSG #{e[:channel]} :Test failed.")
 end

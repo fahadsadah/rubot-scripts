@@ -1,4 +1,4 @@
 command(:test) do
 	|e|
-	rawsend("PRIVMSG #{e[:channel]} :Test failed.")
+	rawsend("PRIVMSG #{e[:target]} :Test failed.")
 end
